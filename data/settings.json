@@ -1,0 +1,9 @@
+{
+  "alert_threshold": 3,
+  "critical_keys": ["meshchersky_1"],
+  "regions_enabled": {
+    "Владимирская область": true,
+    "Рязанская область": true,
+    "Тверская область": true
+  }
+}

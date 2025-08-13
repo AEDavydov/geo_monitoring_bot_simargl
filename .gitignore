@@ -1,0 +1,26 @@
+# 💾 Секретные файлы
+.env
+config.py
+
+# 📁 Пользовательские данные
+data/users.json
+data/last_alerts.json
+data/sent_log.json
+data/wiki_cache.json
+
+# 🪵 Логи
+*.log
+logs/
+
+# 🐍 Python служебные файлы
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 🛠 Кэш pip, тесты
+*.egg-info/
+.eggs/
+dist/
+build/
+.cache/
