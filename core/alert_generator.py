@@ -22,12 +22,12 @@ def generate_alerts(matched_gdf) -> list[dict]:
         lon = row["longitude"]
 
         try:
-            unick = str(int(row.get("unique_id", 0))).strip()
+            unique_id_str = str(int(row.get("unique_id", 0))).strip()
         except Exception as e:
-            logger.warning(f"[ALERT] Невозможно извлечь unick: {e}")
-            unick = ""
+            logger.warning(f"[ALERT] Невозможно извлечь unique_id: {e}")
+            unique_id_str = ""
 
-        wiki_url = get_wiki_url(unick) if unick else "https://wiki.simargl-team.ru"
+        wiki_url = get_wiki_url(unique_id_str) if unique_id_str else "https://wiki.simargl-team.ru"
 
         # Формируем читаемый заголовок
         title_raw = wiki_url.split("/")[-1]
